@@ -1,0 +1,58 @@
+warn("Legend's Chat Commander: Loaded!")
+
+local CheckWL = Instance.new("ScreenGui")
+local CheckPLR = Instance.new("Frame")
+local Page = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+
+CheckWL.Name = "CheckWL"
+CheckWL.Parent = game.CoreGui
+CheckWL.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+CheckPLR.Name = "CheckPLR"
+CheckPLR.Parent = CheckWL
+CheckPLR.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CheckPLR.Position = UDim2.new(0.427841, 0, 0.395577401, 0)
+CheckPLR.Size = UDim2.new(0, 323, 0, 133)
+CheckPLR.Visible = true
+CheckPLR.Active = true
+
+Page.Name = "Page"
+Page.Parent = CheckPLR
+Page.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Page.BackgroundTransparency = 1.000
+Page.Size = UDim2.new(0, 323, 0, 133)
+Page.Font = Enum.Font.Code
+Page.Text = "Legend's Chat Commands: Loaded!"
+Page.TextColor3 = Color3.fromRGB(252, 255, 255)
+Page.TextSize = 20.000
+
+UICorner.CornerRadius = UDim.new(0.075000003, 0)
+UICorner.Parent = CheckPLR
+
+function wait(seconds)
+    local start = os.time()
+    repeat until os.time()
+    > start + seconds
+end
+
+task.wait(1.5)
+Page.Text = "AntiCheat Bypassed!\n"
+
+task.wait(3)
+Page.Text = "Loading.\n"
+task.wait(0.2)
+Page.Text = "Loading..\n"
+task.wait(0.3)
+Page.Text = "Loading...\n"
+task.wait(0.4)
+Page.Text = "Loading..\n"
+task.wait(0.5)
+Page.Text = "Loading.\n"
+task.wait(0.3)
+Page.Text = "Loading...\n"
+task.wait(0.7)
+Page.Text = "Loaded!\n"
+
+task.wait(1.2)
+CheckWL:Destroy()
